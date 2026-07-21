@@ -114,17 +114,14 @@ export const Apply: React.FC = () => {
     const finalTerm = termType === 'Other' ? Number(customTerm) : Number(termType);
 
     const payload: PredictionRequest = {
-      Gender: gender,
-      Married: married,
-      Dependents: dependents,
-      Education: education,
-      Self_Employed: selfEmployed,
-      ApplicantIncome: Number(applicantIncome),
-      CoapplicantIncome: Number(coapplicantIncome),
-      LoanAmount: Number(loanAmount),
-      Loan_Amount_Term: finalTerm,
-      Credit_History: Number(creditHistory),
-      Property_Area: propertyArea,
+      gender: gender,
+      married: married,
+      education: education,
+      self_employed: selfEmployed,
+      applicant_income: Number(applicantIncome),
+      coapplicant_income: Number(coapplicantIncome),
+      loan_amount: Number(loanAmount),
+      credit_history: Number(creditHistory),
     };
 
     try {

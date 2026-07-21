@@ -370,17 +370,14 @@ export const Home: React.FC = () => {
 
     try {
       const defaultPayload: PredictionRequest = {
-        Gender: 'Male',
-        Married: 'Yes',
-        Dependents: '1',
-        Education: 'Graduate',
-        Self_Employed: 'No',
-        ApplicantIncome: 6800,
-        CoapplicantIncome: 2500,
-        LoanAmount: 145, // Equivalent to ₹1,45,000
-        Loan_Amount_Term: 360,
-        Credit_History: 1,
-        Property_Area: 'Semiurban'
+        gender: 'Male',
+        married: 'Yes',
+        education: 'Graduate',
+        self_employed: 'No',
+        applicant_income: 6800,
+        coapplicant_income: 2500,
+        loan_amount: 145, // Equivalent to ₹1,45,000
+        credit_history: 1,
       };
 
       const res = await predictLoan(defaultPayload);

@@ -160,17 +160,14 @@ export const Prediction: React.FC = () => {
 
     try {
       const response = await predictLoan({
-        Gender: data.gender,
-        Married: data.married,
-        Dependents: data.dependents,
-        Education: data.education,
-        Self_Employed: data.selfEmployed,
-        ApplicantIncome: Number(data.applicantIncome),
-        CoapplicantIncome: Number(data.coapplicantIncome),
-        LoanAmount: Number(data.loanAmount),
-        Loan_Amount_Term: Number(data.loanAmountTerm),
-        Credit_History: Number(data.creditHistory),
-        Property_Area: data.propertyArea
+        gender: data.gender,
+        married: data.married,
+        education: data.education,
+        self_employed: data.selfEmployed,
+        applicant_income: Number(data.applicantIncome),
+        coapplicant_income: Number(data.coapplicantIncome),
+        loan_amount: Number(data.loanAmount),
+        credit_history: Number(data.creditHistory),
       });
 
       clearInterval(stepInterval);

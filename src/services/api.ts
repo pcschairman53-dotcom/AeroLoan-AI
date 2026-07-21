@@ -7,17 +7,14 @@ import axios, { AxiosError } from 'axios';
 
 // Request Interface matching FastAPI requirements
 export interface PredictionRequest {
-  Gender: string;
-  Married: string;
-  Dependents: string;
-  Education: string;
-  Self_Employed: string;
-  ApplicantIncome: number;
-  CoapplicantIncome: number;
-  LoanAmount: number;
-  Loan_Amount_Term: number;
-  Credit_History: number;
-  Property_Area: string;
+  gender: string;
+  married: string;
+  education: string;
+  self_employed: string;
+  applicant_income: number;
+  coapplicant_income: number;
+  loan_amount: number;
+  credit_history: number;
 }
 
 // Response Interface with dynamic support for optional fields
